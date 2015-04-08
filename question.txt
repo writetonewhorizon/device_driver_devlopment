@@ -1,0 +1,54 @@
+1. what is a callback function ?
+http://www.opensourceforu.com/2012/02/function-pointers-and-callbacks-in-c-an-odyssey/
+
+2. how user space call-back function to be invoked when an interrupt is received ?
+ANS: Callback from kernel space to user space
+
+Use SIGNAL method in order to notify from the kernel module to user pace
+program.
+
+Before seding signal the kernel module need the process ID of the user
+space program.
+
+In the kernel module:
+
+struct siginfo      sinfo;    /* signal information */
+pid_t  pid;                   /* user program process id */
+struct task_struct *task;
+
+
+/* init */
+memset(&sinfo, 0, sizeof(struct siginfo));  
+sinfo.si_signo = SIGIO;    // Config the signals
+sinfo.si_code  = SI_USER;  // Config SI_QUERE std or SI_KERNEL for RTC
+
+
+pid = your_user_space_PID;
+
+task = find_task_by_vpid (pid);           
+if(task == NULL) {
+   printk ("Cannot find pid from user program\r\n");
+   return;
+}
+
+/* send SIGIO to the user program */
+send_sig_info (SIGIO, &sinfo, task); /* Send signal to user program */ 
+
+
+In user program :
+
+void signal_handler (int signum) {
+     if (signum == SIGIO) printf ("SIGIO\r\n");
+     return;                  
+}
+
+struct sigaction action;
+memset (&action, 0, sizeof (action)); /* clean variable */
+action.sa_handler = signal_handler;   /* specify signal handler */
+action.sa_flags = 0;                  /* operation flags setting */
+sigaction (SIGIO, &action, NULL);     /* attach action with SIGIO */
+
+3. what is signal handler, interrupt handler, isr ?
+4. It is possible to write a GPIO interrupt handle code in user space?
+5. callback or notification from kernel to user space ?
+6. 
