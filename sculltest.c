@@ -29,7 +29,6 @@ int main()
         return -1;
     }
     printf("written bytes are = %d\n",result);
-    close(fd);
     if ((result = read (fd, &buf, sizeof(buf))) != len)
     {
         perror("read failed");
