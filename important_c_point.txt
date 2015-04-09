@@ -1,0 +1,117 @@
+size of data types is compiler dependent in c
+By default data type of numeric constants is:
+6.5 :  double and  Character constant is  4 byte
+
+Syntax of enum data type is:
+enum  [<tag_name>]{
+    <enum_constanat_name> [=<integer_ value>],
+    …
+} [<var_name>,…]
+
+Note: 
+[] : Represents optional .
+<>: Represents any valid c identifier
+
+Lower data type operand always automatically type casted into the operand of higher data type before performing the operation and result will be higher data type.
+Eg Signed is higher data type than unsigned int.
+So, Corresponding signed value of unsigned 10u is +10.
+
+Any expression which is evaluated inside the sizeof operator its scope always will be within the sizeof operator
+Default data type is int if it is not mentioned in declaration.
+a+++b  = a++ + b  due to post increment operator.
+
+b=(unsigned)-10 = unsigned value of -10 is ie
+MAX_VALUE_OF_UNSIGNED_INT – 10 + 1
+
+We cannot predict the value of volatile variable because its value can be changed by any microprocessor interrupt.
+Size of int is always equal to word length of micro preprocessor in which your compiler has based.
+
+char a = 250;
+250 is beyond the range of signed char. Its corresponding cyclic value is: -6
+
+~(-n)=n-1
+Use two’s compliment to solve negation in c.
+Two’s compliment = one’s compliment +1
+Cyclic nature of data type in C 
+In C some data types shows one special properties that when we assign a value beyond range of that data type then it will not any compiler error but assign a number according to some cyclic order. This property is known as cyclic nature of data type.
+Data type which shows cyclic nature:
+(a) char
+(b) int
+(c) long int
+Data type which doesn’t show cyclic nature:
+(a) float
+(b) double
+(c) long double
+1. Cyclic nature of unsigned char: 
+Range of unsigned char is 0 to 255. If we will assign a value greater than 255 then value of variable will be changed to a value if we will move clockwise direction as shown in the figure according to number. If number is less than 0 then move in anti clockwise direction.
+
+ 
+
+Short cut formula to find cyclic value: 
+If number is X where X is greater than 255 then
+New value = X % 256
+If number is Y where Y is less than 0 then
+New value = 256 – (Y% 256)
+
+2. Cyclic nature of signed char: 
+
+Range of unsigned char is -128 to 127. If we will assign a value greater than 127 then value of variable will be changed to a value if we will move clockwise direction as shown in the figure according to number. If number is less than -128 then move in anti clockwise direction.
+
+
+
+ 
+
+Short cut formula to find cyclic value: 
+If number is X where X is greater than 127 then
+p = X % 256
+if p <=127 
+New value = p 
+else 
+New value = p – 256
+If number is Y where Y is less than -128 then
+p = Y % 256 
+If p <= 127 
+New value = -p 
+else 
+New value = 256 -p 
+
+
+3. Cyclic nature of unsigned int: 
+
+Range of unsigned int is 0 to 653535. If we will assign a value greater than 65535 then value of variable will be changed to a value if we will move clockwise direction as shown in the figure according to number. If number is less than 0 then move in anti clockwise direction.
+
+ 
+
+Short cut formula to find cyclic value:
+If number is X where X is greater than 65535 then
+New value = X % 65536
+If number is Y where Y is less than 0 then
+New value = 65536– (Y% 65536)
+
+4. Cyclic nature of signed int: 
+
+Range of unsigned int is -32768 to 32767. If we will assign a value greater than 32767 then value of variable will be changed to a value if we will move clockwise direction as shown in the figure according to number. If number is less than -32768 then move in anti clockwise direction.
+ 
+If number is X where X is greater than 32767 then
+p = X % 65536
+if p <=32767 
+New value = p 
+else 
+New value = p - 65536 
+If number is Y where Y is less than -32768 then 
+p = Y % 65536 
+If p <= 32767 
+New value = -p 
+else 
+New value = 65536 -p 
+
+
+Note: Same rule is also applicable in case of signed long int and unsigned long int.
+
+
+Nesting of enum constant is not possible in c
+Register data type stores in CPU. So it has not any memory address. Hence we cannot write &a
+Void pointer can hold address of any data type without type casting. Any pointer can hold void pointer without type casting.
+Array name is constant pointer and we cannot assign any value in constant data type after declaration.
+
+Difference of two same type of pointer is always one.
