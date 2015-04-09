@@ -29,6 +29,13 @@ int main()
         return -1;
     }
     printf("written bytes are = %d\n",result);
+    close(fd);
+    if ((fd = open ("/dev/scull", O_RDONLY)) == -1)
+    {
+        perror("open failed");
+        return -1;
+    }
+    printf("fd = %d\n",fd);
     if ((result = read (fd, &buf, sizeof(buf))) != len)
     {
         perror("read failed");
@@ -36,15 +43,15 @@ int main()
     }
     printf("read bytes are = %d\n",result);
     buf[result] = '\0';
-    if (strncmp (buf, str, len))
+    if (strncmp (buf, str, len)) 
     { 
         fprintf (stdout, "failed: read back \"%s\"\n", buf);
     }
-    else
+    else 
     {
         fprintf (stdout, "passed\n");
-    } 
-    close(fd);
-      
+    }
+    close(fd); 
+    
     return 0;
 }
