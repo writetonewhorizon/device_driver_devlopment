@@ -12,7 +12,8 @@ sudo ln -sf scull0 /dev/scull
 sudo chgrp dus5cob /dev/scull[0-3]
 sudo chmod 644 /dev/scull[0-3]
 ls -al /dev/ | grep scull
-sudo ./sculltest.c
+sudo ./sculltest
 dmesg
 sudo rmmod scull
+dmesg
 //sudo modprobe -r scull or rmmod --help
