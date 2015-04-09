@@ -1,0 +1,16 @@
+
+make -C /usr/src/linux-headers-3.2.0-33-generic-pae/ SUBDIRS=$PWD modules
+make dep
+make modules
+make
+make modules_install install
+
+if you want to run multi "make " process you can add -jn after "make",like this
+make -j10 modules
+
+edit /boot/grub/menu.lst,change the path of "kernel" and "initrd"
+you will find the former has a file associated in "/boot/",such as vmlinuz-3.2.0-33-generic-pae but the initrd 
+should be manully made by yourself.
+run "mkinirtd -o /boot/3.2.0-33.img 3.2.0-33",after this command you will get this file initrd.img-3.2.0-33-generic-pae
+and copy this .img file to /boot,and then change the contents of /boot/grub/menu.lst.
+then you can reboot your computer and enjoy your new kernel!
