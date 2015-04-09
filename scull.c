@@ -74,10 +74,10 @@ int scull_open(struct inode *inode, struct file *filp)
 	/* now trim to 0 the length of the device if open was write-only */
 	if ( (filp->f_flags & O_ACCMODE) == O_WRONLY) 
 	{
-		if (down_interruptible(&dev->sem))
-			return -ERESTARTSYS;
+		//if (down_interruptible(&dev->sem))
+		//	return -ERESTARTSYS;
 		scull_trim(dev); /* ignore errors */
-		up(&dev->sem);
+		//up(&dev->sem);
 	}
 	return 0;          /* success */
 	printk(KERN_NOTICE "END >>>>>>%s",__func__ );
@@ -156,8 +156,8 @@ ssize_t scull_read(struct file *filp, char __user *buf, size_t count,loff_t *f_p
 	int itemsize = quantum * qset; /* how many bytes in the listitem */
 	int item, s_pos, q_pos, rest;
 	printk(KERN_NOTICE "BEGIN >>>>>>%s",__func__ );
-	if (down_interruptible(&dev->sem))
-		return -ERESTARTSYS;
+	//if (down_interruptible(&dev->sem))
+	//	return -ERESTARTSYS;
 	if (*f_pos >= dev->size)
 		goto out;
 	if (*f_pos + count > dev->size)
@@ -183,7 +183,7 @@ ssize_t scull_read(struct file *filp, char __user *buf, size_t count,loff_t *f_p
 	*f_pos += count;
 	retval = count;
 out:
-	up(&dev->sem);
+	//up(&dev->sem);
 	printk(KERN_NOTICE "END >>>>>>%s",__func__ );
 	return retval;
 }
@@ -210,8 +210,8 @@ ssize_t scull_write(struct file *filp, const char __user *buf, size_t count,loff
 	int item, s_pos, q_pos, rest;
 	ssize_t retval = -ENOMEM; /* value used in "goto out" statements */
 	printk(KERN_NOTICE "BEGIN >>>>>>%s",__func__ );
-	if (down_interruptible(&dev->sem))
-		return -ERESTARTSYS;
+	//if (down_interruptible(&dev->sem))
+	//	return -ERESTARTSYS;
 	
 	/* find listitem, qset index and offset in the quantum */
 	item = (long)*f_pos / itemsize;
@@ -250,7 +250,7 @@ ssize_t scull_write(struct file *filp, const char __user *buf, size_t count,loff
 	if (dev->size < *f_pos)
 		dev->size = *f_pos;
 out:
-	up(&dev->sem);
+	//up(&dev->sem);
 	printk(KERN_NOTICE "END >>>>>>%s",__func__ );
 	return retval;
 }
