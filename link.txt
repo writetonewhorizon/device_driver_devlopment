@@ -1,0 +1,2 @@
+for gcc
+http://www.linuxtopia.org/online_books/an_introduction_to_gcc/gccintro_25.html
