@@ -1,0 +1,1 @@
+cmd_/home/ser_port_driver/lkm.ko := ld -r -m elf_x86_64 -T /usr/src/kernels/linux-3.6.2/scripts/module-common.lds --build-id  -o /home/ser_port_driver/lkm.ko /home/ser_port_driver/lkm.o /home/ser_port_driver/lkm.mod.o

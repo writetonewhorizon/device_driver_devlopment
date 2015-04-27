@@ -1,0 +1,36 @@
+#! /bin/bash
+
+make
+read v
+
+insmod ./modules/block_lkm.ko
+read v
+
+lsmod 
+read v
+
+dmesg
+read v
+
+vim /proc/devices
+read v
+
+gcc-o application application.c
+./application "blockdisk"
+
+dmesg
+read v
+
+rmmod ./modules/block_lkm.ko
+read v
+
+dmesg
+read v
+
+lsmod
+readv
+
+make clean
+read v 
+
+ls

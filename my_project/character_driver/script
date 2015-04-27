@@ -1,0 +1,29 @@
+#!/bin/bash
+
+dmesg
+read v
+
+cat /proc/devices
+read v
+
+insmod ./modules/ch_d.ko nod=2
+read v
+
+cat /proc/devices
+read v
+
+lsmod
+read v
+
+dmesg
+read v
+
+rmmod ch_d
+read v
+
+cat /proc/devices
+
+lsmod
+read v
+
+dmesg

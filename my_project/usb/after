@@ -1,0 +1,70 @@
+Module                  Size  Used by
+pl2303                  9962  0 
+vfat                    7031  0 
+fat                    37971  1 vfat
+ppdev                   6176  0 
+parport_pc             16772  0 
+lp                      6933  0 
+parport                26550  3 ppdev,parport_pc,lp
+fuse                   53291  5 
+ip6table_filter         1215  0 
+ip6_tables              9828  1 ip6table_filter
+ebtable_nat             1451  0 
+ebtables               12195  1 ebtable_nat
+ipt_MASQUERADE          1708  3 
+iptable_nat             3734  1 
+nf_nat                 15054  2 ipt_MASQUERADE,iptable_nat
+nf_conntrack_ipv4       6874  4 iptable_nat,nf_nat
+nf_defrag_ipv4          1093  1 nf_conntrack_ipv4
+xt_state                 942  1 
+nf_conntrack           56162  5 ipt_MASQUERADE,iptable_nat,nf_nat,nf_conntrack_ipv4,xt_state
+xt_CHECKSUM              921  1 
+iptable_mangle          1247  1 
+bridge                 60887  0 
+stp                     1391  1 bridge
+llc                     3726  2 bridge,stp
+lockd                  59180  0 
+snd_hda_codec_hdmi     21224  1 
+snd_hda_codec_idt      48638  1 
+snd_hda_intel          20775  2 
+snd_hda_codec          73545  3 snd_hda_codec_hdmi,snd_hda_codec_idt,snd_hda_intel
+snd_hwdep               4821  1 snd_hda_codec
+snd_seq                43428  0 
+snd_seq_device          5033  1 snd_seq
+snd_pcm                63679  3 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec
+snd_timer              15209  2 snd_seq,snd_pcm
+snd                    48367  13 snd_hda_codec_hdmi,snd_hda_codec_idt,snd_hda_intel,snd_hda_codec,snd_hwdep,snd_seq,snd_seq_device,snd_pcm,snd_timer
+iTCO_wdt               10036  0 
+dell_laptop             7223  0 
+soundcore               5027  1 snd
+iTCO_vendor_support     2070  1 iTCO_wdt
+rfkill                 12939  2 dell_laptop
+snd_page_alloc          6095  2 snd_hda_intel,snd_pcm
+dell_wmi                1313  0 
+i2c_i801                8021  0 
+r8169                  34876  0 
+mii                     3639  1 r8169
+dcdbas                  6184  1 dell_laptop
+sparse_keymap           2746  1 dell_wmi
+uvcvideo               51209  0 
+videodev               70682  1 uvcvideo
+media                   9214  2 uvcvideo,videodev
+microcode              11041  0 
+vhost_net              21692  0 
+macvtap                 6375  1 vhost_net
+macvlan                 6901  1 macvtap
+tun                    11098  2 vhost_net
+kvm_intel             111093  0 
+kvm                   282465  1 kvm_intel
+uinput                  5397  0 
+sunrpc                169682  2 lockd
+wmi                     7601  1 dell_wmi
+uas                     6207  0 
+ums_realtek             4249  0 
+usb_storage            36551  1 ums_realtek
+i915                  342134  3 
+drm_kms_helper         23190  1 i915
+drm                   157644  4 i915,drm_kms_helper
+i2c_algo_bit            4166  1 i915
+i2c_core               21564  6 i2c_i801,videodev,i915,drm_kms_helper,drm,i2c_algo_bit
+video                  10740  1 i915

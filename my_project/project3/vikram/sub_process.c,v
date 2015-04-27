@@ -1,0 +1,77 @@
+head	1.1;
+access;
+symbols;
+locks
+	vikram:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2013.04.10.18.43.31;	author vikram;	state Exp;
+branches;
+next	;
+
+
+desc
+@Subtract providing Client.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include"header1.h"
+
+int main(int argc,char * argv[])
+{
+	int i = 0;
+	int j = 0;
+	int op1,op2;
+	int rd,wr;
+	char *op;
+	int result;
+	char ch=1;
+	op = (char *)malloc(sizeof(char));
+
+	rd = atoi(argv[2]);
+	wr = atoi(argv[3]);
+
+//	while(ch)
+//	printf("%c\n",ch = *(argv[1] + i++));
+
+	while(1)
+	{
+		*(op+i) = *(argv[1] + i);
+		if(*(op + i++) == '-')
+		{
+			op[i-1] = '\0';
+			break;
+		} 
+		op = realloc(op,i+1);
+	}
+
+	op1 = atoi(op);
+	printf("op1 = %d\n",op1);
+	memset(op,'\0',strlen(op));
+
+	do
+	{
+		*(op + j) = *(argv[1] + i);
+		op = realloc(op,strlen(op)+1);
+		i++;
+
+	}while(*(op + j++) != '\0');
+
+	printf("op = %s\n",op);
+
+	op2 = atoi(op);
+
+	result = op1 - op2;	
+	write(wr,&result,4);
+
+	sleep(5);	
+	exit(5);
+}	
+@

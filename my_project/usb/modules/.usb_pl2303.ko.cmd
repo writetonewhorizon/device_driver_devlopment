@@ -1,0 +1,1 @@
+cmd_/home/usb/usb_pl2303.ko := ld -r -m elf_i386 -T /usr/src/kernels/3.1.0-7.fc16.i686.PAE/scripts/module-common.lds --build-id  -o /home/usb/usb_pl2303.ko /home/usb/usb_pl2303.o /home/usb/usb_pl2303.mod.o

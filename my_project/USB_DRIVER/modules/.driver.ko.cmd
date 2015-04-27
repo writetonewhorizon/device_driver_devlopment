@@ -1,0 +1,1 @@
+cmd_/home/neeraj/neeraj/driver/USB_DRIVER/driver.ko := ld -r -m elf_i386 -T /usr/src/kernels/3.3.4-5.fc17.i686.PAE/scripts/module-common.lds --build-id  -o /home/neeraj/neeraj/driver/USB_DRIVER/driver.ko /home/neeraj/neeraj/driver/USB_DRIVER/driver.o /home/neeraj/neeraj/driver/USB_DRIVER/driver.mod.o

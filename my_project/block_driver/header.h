@@ -1,0 +1,55 @@
+#include<linux/module.h>			/*Need for all modules*/
+#include<linux/init.h>				/*Need for modules __init ,__exit*/
+#include<linux/fs.h>				/*Need for registration block driver*/
+#include<linux/printk.h>			/*Need for flags KERN_ALERT etc*/
+#include<linux/genhd.h>				/*Need for gendisk structure and to initalize it*/
+#include<linux/slab.h>				/*Need for kmalloc and memory allocation*/
+#include<linux/blkdev.h>			/*Need for block_device_operations*/
+#include<linux/spinlock.h>			/*Need for sipn lock*/
+MODULE_LICENSE("GPL");
+
+#ifndef _AUTHOR_NAME
+#define _AUTHOR_NAME "Suresh kumar"
+#endif
+
+
+#ifndef DEVICE_NAME
+#define DEVICE_NAME "Block driver"
+#endif
+
+#ifndef DEBUG
+#define DEBUG
+#endif
+
+#ifndef MAJOR_NUMBER
+#define MAJOR_NUMBER 0
+#endif
+int major_number=MAJOR_NUMBER;
+
+#ifndef MINOR_NUMBER
+#define MINOR_NUMBER 0
+#endif
+int minor_number=MINOR_NUMBER;
+fmode_t fmod;
+
+struct sbull_dev
+{
+	int size;			/*Device size in sector*/
+	u8 *data;			/*The data array*/
+	short users;			/*How many users*/
+	short media_change;		/*Flag as media change*/
+	spinlock_t lock;		/*For mutual exclusion*/
+	struct request_queue *queue; 	/*The device request queue*/
+	struct gendisk *gendisk;	/*gendisk structure*/
+	struct timer_list timer;	/*For simulated media changes*/
+};
+struct sbull_dev *sbulldev;
+int function_add(struct sbull_dev *);
+int sbull_open(struct block_device *,fmode_t );
+int sbull_release(struct gendisk *,fmode_t );
+//static void sbull_request();
+static struct block_device_operations fops={
+	
+	open: sbull_open,
+	release: sbull_release
+};

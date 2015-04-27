@@ -1,0 +1,1 @@
+cmd_/home/emblogic/sampath27/pptr/ppreceiver/parallelport/pp.ko := ld -r -m elf_i386 -T /home/emblogic/Downloads/linux-3.10.9/scripts/module-common.lds --build-id  -o /home/emblogic/sampath27/pptr/ppreceiver/parallelport/pp.ko /home/emblogic/sampath27/pptr/ppreceiver/parallelport/pp.o /home/emblogic/sampath27/pptr/ppreceiver/parallelport/pp.mod.o

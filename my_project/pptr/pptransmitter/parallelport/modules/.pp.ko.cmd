@@ -1,0 +1,1 @@
+cmd_/home/emblogic/pptransmitter/parallelport/pp.ko := ld -r -m elf_x86_64 -T /usr/src/kernels/2.6.38.6-26.rc1.fc15.x86_64/scripts/module-common.lds --build-id  -o /home/emblogic/pptransmitter/parallelport/pp.ko /home/emblogic/pptransmitter/parallelport/pp.o /home/emblogic/pptransmitter/parallelport/pp.mod.o

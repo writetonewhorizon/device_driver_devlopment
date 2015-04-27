@@ -1,0 +1,32 @@
+[ 2842.518331] ************** In  pl2303_open
+[ 2842.518499] Begin pl2303_vendor_write value is 8 index is 0
+[ 2842.518502] END pl2303_vendor_write
+[ 2842.518591] Begin pl2303_vendor_write value is 9 index is 0
+[ 2842.518593] END pl2303_vendor_write
+[ 2842.518594] SETTING BAUD RATE ************* IN pl2303_set_termios
+[ 2842.519122] Begin pl2303_vendor_write value is 0 index is 0
+[ 2842.519125] END pl2303_vendor_write
+[ 2842.519127] END pl2303_set_termios
+[ 2842.519225] END pl2303_open
+[ 2842.519227] Begin pl2303_dtr_rts
+[ 2842.519229] Begin pl2303_set_control_lines
+[ 2842.519333] Begin pl2303_process_read_urb
+[ 2842.519337] END pl2303_process_read_urb
+[ 2842.519496] END pl2303_set_control_lines *******value****** 3
+[ 2842.519500] End pl2303_dtr_rts *******control sent is****** 3
+[ 2842.519502] Begin pl2303_carrier_raised
+[ 2842.520583] Begin pl2303_read_int_callback
+[ 2842.520584] Begin pl2303_update_line_status
+[ 2842.520586] END pl2303_update_line_status
+[ 2842.520588] END pl2303_read_int_callback
+[ 2842.521614] Begin pl2303_read_int_callback
+[ 2842.521618] Begin pl2303_update_line_status
+[ 2842.521619] END pl2303_update_line_status
+[ 2842.521623] END pl2303_read_int_callback
+[ 2842.619545] Begin pl2303_dtr_rts
+[ 2842.619549] Begin pl2303_set_control_lines
+[ 2842.619676] END pl2303_set_control_lines *******value****** 0
+[ 2842.619679] End pl2303_dtr_rts *******control sent is****** 0
+[ 2842.619681] Begin pl2303_close
+[ 2842.622315] Begin pl2303_read_int_callback
+[ 2842.622333] END pl2303_close

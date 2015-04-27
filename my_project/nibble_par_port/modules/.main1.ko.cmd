@@ -1,0 +1,1 @@
+cmd_/home/nibble_par_port/main1.ko := ld -r -m elf_x86_64 -T /usr/src/kernels/linux-3.6.2/scripts/module-common.lds --build-id  -o /home/nibble_par_port/main1.ko /home/nibble_par_port/main1.o /home/nibble_par_port/main1.mod.o

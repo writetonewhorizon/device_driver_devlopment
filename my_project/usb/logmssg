@@ -1,0 +1,33 @@
+[  243.270630] ************** In  pl2303_open
+[  243.270814] Begin pl2303_vendor_write value is 8 index is 0
+[  243.270817] END pl2303_vendor_write
+[  243.270932] Begin pl2303_vendor_write value is 9 index is 0
+[  243.270935] END pl2303_vendor_write
+[  243.270938] SETTING BAUD RATE ************* IN pl2303_set_termios
+[  243.271432] Begin pl2303_vendor_write value is 0 index is 0
+[  243.271434] END pl2303_vendor_write
+[  243.271437] END pl2303_set_termios
+[  243.271580] END pl2303_open
+[  243.271584] Begin pl2303_dtr_rts
+[  243.271586] Begin pl2303_set_control_lines
+[  243.271678] Begin pl2303_process_read_urb DATA is 
+[  243.271681] DATA after Loop is 
+[  243.271684] END pl2303_process_read_urb
+[  243.271726] END pl2303_set_control_lines *******value****** 3
+[  243.271729] End pl2303_dtr_rts *******control sent is****** 3
+[  243.271732] Begin pl2303_carrier_raised
+[  243.272178] Begin pl2303_read_int_callback
+[  243.272181] Begin pl2303_update_line_status
+[  243.272183] END pl2303_update_line_status
+[  243.272187] END pl2303_read_int_callback DATA is \xffffffa1 
+[  243.273178] Begin pl2303_read_int_callback
+[  243.273181] Begin pl2303_update_line_status
+[  243.273183] END pl2303_update_line_status
+[  243.273186] END pl2303_read_int_callback DATA is \xffffffa1 
+[  243.370926] Begin pl2303_dtr_rts
+[  243.370932] Begin pl2303_set_control_lines
+[  243.371126] END pl2303_set_control_lines *******value****** 0
+[  243.371131] End pl2303_dtr_rts *******control sent is****** 0
+[  243.371133] Begin pl2303_close
+[  243.373783] Begin pl2303_read_int_callback
+[  243.373802] END pl2303_close

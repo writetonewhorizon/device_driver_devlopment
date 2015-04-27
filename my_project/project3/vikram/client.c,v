@@ -1,0 +1,83 @@
+head	1.1;
+access;
+symbols;
+locks
+	vikram:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2013.04.10.19.30.05;	author vikram;	state Exp;
+branches;
+next	;
+
+
+desc
+@client with fifo.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include"header1.h"
+#define REQ_FIFO "reqfifo"
+#define RESULT_FIFO "result%dfifo"
+
+int main(int argc,char *argv[])
+{
+	int fdw;
+	int fdr;
+	int wc;
+	int rc;
+	int op1,op2,op;
+	int result;
+	int pid;
+	char *buff;
+	
+	buff = (char *)malloc(sizeof(char)*20);
+
+	sprintf(buff,RESULT_FIFO,getpid());
+
+	if(access(buff,F_OK) == -1)
+		mkfifo(buff,0777);	
+	
+	printf("Fifo created successfully\n");
+	
+	fdw = open(REQ_FIFO,O_WRONLY);
+//	printf("Write file discriptor %d\n",fdw);
+
+	printf("Enter First Oprend\n");
+	scanf("%d",&op1);
+	printf("Enter Second Oprend\n");
+	scanf("%d",&op2);
+	printf("Enter Opreation to perform\n");
+	scanf(" %c",&op);
+
+	printf("op1 = %d op2 = %d op = %c\n",op1,op2,op);
+	
+	pid = getpid();
+	sleep(2);
+
+	wc = write(fdw,&pid,4);
+	wc = wc + write(fdw,&op1,4);
+	wc = wc + write(fdw,&op2,4);
+	wc = wc + write(fdw,&op,4);
+
+	printf("%d bytes written successfully on fdw i.e %d\n",wc,fdw);
+	
+	fdr = open(buff,O_RDONLY);
+	printf("Read file discriptor %d\n",fdr);
+
+	rc = read(fdr,&result,4);
+
+	printf("Client Got Result %d\n",result);
+
+	close(fdr);
+	close(fdw);
+	
+	return 0;
+}
+@

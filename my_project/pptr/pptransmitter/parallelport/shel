@@ -1,0 +1,34 @@
+make
+read i
+
+insmod ./modules/pp.ko
+read i
+
+
+
+gcc -o application application.c
+read i
+
+mknod node c 250 0
+read i;
+
+./application node 
+read i
+lsmod 
+read i
+
+cat < /proc/devices
+read i
+
+dmesg
+read i
+
+rmmod pp
+read i
+
+cat < /proc/devices
+read i
+
+dmesg
+read i
+unlink node

@@ -1,0 +1,17 @@
+
+RCS file: server.c,v
+Working file: server.c
+head: 1.1
+branch:
+locks: strict
+access list:
+symbolic names:
+keyword substitution: kv
+total revisions: 1;	selected revisions: 1
+description:
+srvr working for upto 60 clients using fifo's & threads....
+----------------------------
+revision 1.1
+date: 2013/06/26 04:18:21;  author: emblogic;  state: Exp;
+Initial revision
+=============================================================================

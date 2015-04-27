@@ -1,0 +1,48 @@
+head	1.1;
+access;
+symbols;
+locks
+	emblogic:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2002.01.02.07.21.11;	author emblogic;	state Exp;
+branches;
+next	;
+
+
+desc
+@able to toggle from application through write
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include<stdio.h>
+#include<fcntl.h>
+#include<string.h>
+#include<stdlib.h>
+#include<pthread.h>
+#include<semaphore.h>
+#include<sys/ioctl.h>
+int main(int argc,char *argv[])
+{
+int fd,ret_w;
+fd=open(argv[1],O_WRONLY);
+if(fd<0)
+printf("fail to open\n");
+printf("fd:%d\n",fd);
+
+ret_w=write(fd,"110",3);
+if(ret_w<0)
+printf("fail to write\n");
+if(ret_w==0)
+printf("sucess in writing\n");
+
+close(fd);
+}
+@

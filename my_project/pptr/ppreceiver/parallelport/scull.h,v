@@ -1,0 +1,79 @@
+head	1.2;
+access;
+symbols;
+locks
+	root:1.2; strict;
+comment	@ * @;
+
+
+1.2
+date	2002.01.02.07.19.43;	author emblogic;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.01.02.03.07.25;	author emblogic;	state Exp;
+branches;
+next	;
+
+
+desc
+@parallelport
+@
+
+
+1.2
+log
+@interaction from application driver to hardware
+@
+text
+@#include<linux/cdev.h>
+
+int scull_open(struct inode *,struct file *);
+int scull_release(struct inode *,struct file *);
+ssize_t scull_write(struct file *,const char __user *, size_t, loff_t *);
+struct scull_qset
+{
+void **data;
+struct scull_qset *next;
+};
+
+struct scull_dev
+{
+struct scull_qset *scull_Qset;
+struct cdev cDev;
+int quantum_size;
+int qset_size;
+
+int data_size;
+int device_size;
+};
+struct scull_dev *scull_Dev;
+struct file_operations fops=
+{
+
+open:scull_open,
+
+write:scull_write,
+/*
+read:scull_read,
+*/
+release:scull_release
+
+};
+
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d5 1
+a5 1
+//ssize_t scull_write(struct file *,const char __user *, size_t, loff_t *);
+d28 1
+a28 1
+//write:scull_write,
+@

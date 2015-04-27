@@ -1,0 +1,996 @@
+file created successfully and pid is 7283
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7284
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7288
+file created successfully and pid is 7288
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7289
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7291
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7287
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7286
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7292
+file created successfully and pid is 7292
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7297
+file created successfully and pid is 7297
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7294
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7285
+file created successfully and pid is 7285
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7299
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7296
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7298
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7302
+file created successfully and pid is 7302
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7305
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7304
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7310
+file created successfully and pid is 7310
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7308
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7314
+file created successfully and pid is 7314
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7309
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7311
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7316
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7315
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7306
+file created successfully and pid is 7306
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7313
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7324
+file created successfully and pid is 7324
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7328
+file created successfully and pid is 7328
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7325
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7337
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7321
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7332
+file created successfully and pid is 7332
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7333
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7335
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7331
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7329
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7336
+file created successfully and pid is 7336
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7341
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7340
+file created successfully and pid is 7340
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7339
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7342
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7327
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7323
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7344
+file created successfully and pid is 7344
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7346
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7320
+file created successfully and pid is 7320
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7353
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7356
+file created successfully and pid is 7356
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7357
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7358
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7359
+file created successfully and pid is 7359
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7364
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7368
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7371
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7370
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7374
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7376
+file created successfully and pid is 7376
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7375
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7379
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7378
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7380
+file created successfully and pid is 7380
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7383
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7369
+file created successfully and pid is 7369
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7372
+file created successfully and pid is 7372
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7365
+file created successfully and pid is 7365
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7366
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7363
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7381
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7384
+file created successfully and pid is 7384
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7391
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7393
+file created successfully and pid is 7393
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7387
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7398
+file created successfully and pid is 7398
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7395
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7401
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7396
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7399
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7403
+file created successfully and pid is 7403
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7407
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7410
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7408
+file created successfully and pid is 7408
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7411
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7412
+file created successfully and pid is 7412
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7416
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7423
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7422
+file created successfully and pid is 7422
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7406
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7413
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7425
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7421
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7430
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7427
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7419
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7426
+file created successfully and pid is 7426
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7432
+file created successfully and pid is 7432
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7436
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7439
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7443
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7447
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7451
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7452
+file created successfully and pid is 7452
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7417
+file created successfully and pid is 7417
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7458
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7459
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7441
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7440
+file created successfully and pid is 7440
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7444
+file created successfully and pid is 7444
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7454
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7455
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7449
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7448
+file created successfully and pid is 7448
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7456
+file created successfully and pid is 7456
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7445
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7462
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7464
+file created successfully and pid is 7464
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7463
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7472
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7474
+file created successfully and pid is 7474
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7477
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7467
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7481
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7478
+file created successfully and pid is 7478
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7482
+file created successfully and pid is 7482
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7489
+file created successfully and pid is 7489
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7486
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7496
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7498
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7484
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7479
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7505
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7493
+file created successfully and pid is 7493
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7500
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7501
+file created successfully and pid is 7501
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7506
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7507
+file created successfully and pid is 7507
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7490
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7512
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7475
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7510
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7517
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7514
+file created successfully and pid is 7514
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7527
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7521
+file created successfully and pid is 7521
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7522
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7497
+file created successfully and pid is 7497
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7523
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7528
+file created successfully and pid is 7528
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7526
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7525
+file created successfully and pid is 7525
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7494
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7536
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7539
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7540
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7531
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7541
+file created successfully and pid is 7541
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7543
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7545
+file created successfully and pid is 7545
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7547
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7544
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7491
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7548
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7553
+file created successfully and pid is 7553
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7551
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7555
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7552
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7556
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7549
+file created successfully and pid is 7549
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7557
+file created successfully and pid is 7557
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7560
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7561
+file created successfully and pid is 7561
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7515
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7559
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7562
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7566
+file created successfully and pid is 7566
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7567
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7569
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7578
+file created successfully and pid is 7578
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7571
+file created successfully and pid is 7571
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7581
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7579
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7574
+file created successfully and pid is 7574
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7572
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7573
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7584
+file created successfully and pid is 7584
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7585
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7586
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7589
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7590
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7587
+file created successfully and pid is 7587
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7592
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7565
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7577
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7591
+file created successfully and pid is 7591
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7576
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7594
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7538
+file created successfully and pid is 7538
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7596
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7598
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7595
+file created successfully and pid is 7595
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7604
+file created successfully and pid is 7604
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7607
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7608
+file created successfully and pid is 7608
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7610
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7611
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7612
+file created successfully and pid is 7612
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7616
+file created successfully and pid is 7616
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7621
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7617
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7613
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7623
+file created successfully and pid is 7623
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7627
+file created successfully and pid is 7627
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7626
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7630
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7622
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7631
+file created successfully and pid is 7631
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7628
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7605
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7632
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7625
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7620
+file created successfully and pid is 7620
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7635
+file created successfully and pid is 7635
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7633
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7636
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7637
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7640
+file created successfully and pid is 7640
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7615
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7618
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7647
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7653
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7650
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7645
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7655
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7656
+file created successfully and pid is 7656
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7657
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7658
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7648
+file created successfully and pid is 7648
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7652
+file created successfully and pid is 7652
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7661
+file created successfully and pid is 7661
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7651
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7664
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7669
+file created successfully and pid is 7669
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7671
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7670
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7681
+file created successfully and pid is 7681
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7682
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7675
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7673
+file created successfully and pid is 7673
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7684
+file created successfully and pid is 7684
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7690
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7683
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7698
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7702
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7706
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7667
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7693
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7707
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7696
+file created successfully and pid is 7696
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7710
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7692
+file created successfully and pid is 7692
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7699
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7704
+file created successfully and pid is 7704
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7695
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7691
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7700
+file created successfully and pid is 7700
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7708
+file created successfully and pid is 7708
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7703
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7686
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7688
+file created successfully and pid is 7688
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7677
+file created successfully and pid is 7677
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7717
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7687
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7724
+file created successfully and pid is 7724
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7678
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7674
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7728
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7731
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7733
+file created successfully and pid is 7733
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7726
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7735
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7732
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7679
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7736
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7740
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7743
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7737
+file created successfully and pid is 7737
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7744
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7747
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7741
+file created successfully and pid is 7741
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7748
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7738
+file discriptor is 3  
+result of sum (20+20)= 40
+process pid is 7750
+file created successfully and pid is 7750
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7753
+file discriptor is 3
+result of differance (30-20)= 10
+file created successfully and pid is 7752
+file discriptor is 3  
+result of sum (20+20)= 40
+file created successfully and pid is 7758
+file discriptor is 3
+result of differance (30-20)= 10
+process pid is 7755
+file created successfully and pid is 7755
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7759
+file created successfully and pid is 7759
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7729
+file created successfully and pid is 7729
+file discriptor is 3
+result of sum (20*20)= 400
+process pid is 7746
+file created successfully and pid is 7746
+file discriptor is 3
+result of sum (20*20)= 400
+file created successfully and pid is 7756
+file discriptor is 3  
+result of sum (20+20)= 40

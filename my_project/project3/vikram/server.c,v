@@ -1,0 +1,107 @@
+head	1.1;
+access;
+symbols;
+locks
+	vikram:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2013.04.10.18.38.54;	author vikram;	state Exp;
+branches;
+next	;
+
+
+desc
+@server with fifo.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include"header1.h"
+#define REQ_FIFO "reqfifo"
+#define RESULT_FIFO "result%dfifo"
+
+int main(int argc,char *argv[])
+{
+	char *ch = "0123456789";
+	int fdr;
+	int fdw;
+	int rfd;
+	int rc,wc;
+	int i;
+	int cl_pid;
+	int op1;
+	int op2;
+	int op;
+	int result;
+	char *buff;
+	char *wd;
+	char *rd;
+	int pp[2];
+
+	if(pipe(pp) == 0)
+		printf("Pipe created with descriptor %d and %d\n",pp[0],pp[1]);
+
+	pid_t pid;
+
+	buff = (char *)malloc(sizeof(char)*20);
+	wd = (char *)malloc(sizeof(char)*5);
+	rd = (char *)malloc(sizeof(char)*5);
+
+	if(access(REQ_FIFO,F_OK) == -1)
+		mkfifo(REQ_FIFO,0777);	
+	
+	printf("Fifo created successfully\n");
+
+//	printf("\nNo Client Yet\n\n");
+	
+//	fdr = open(REQ_FIFO,O_RDONLY);
+//	printf("A Client Came\n");
+
+	for(i=0; i<5; i++)
+	{
+		printf("Waiting for Client request\n");
+		fdr = open(REQ_FIFO,O_RDONLY);
+
+		rc = read(fdr,&cl_pid,4);
+		rc = read(fdr,&op1,4);
+		rc = read(fdr,&op2,4);
+		rc = read(fdr,&op,4);
+	
+		op = op & 0x000000ff;
+	
+		sprintf(wd,"%d",pp[1]);
+		sprintf(rd,"%d",pp[0]);
+		sprintf(buff,"%d%c%d",op1,op,op2);
+
+		pid = fork();
+	
+		if(!pid)
+		{
+			if(op == '+')
+				execl("add_process","add_process",buff,rd,wd,NULL);
+			else if(op == '-')
+				execl("sub_process","add_process",buff,rd,wd,NULL);
+			else if(op == '*')
+				execl("multi_process","add_process",buff,rd,wd,NULL);
+		}	
+		
+		rc = read(pp[0],&result,4);
+		printf("Result of %s is %d\n",buff,result);
+
+		memset(buff,'\0',strlen(buff)+1);
+		sprintf(buff,RESULT_FIFO,cl_pid);
+		rfd = open(buff,O_WRONLY);
+
+		wc = write(rfd,&result,4);
+		sleep(2);		
+	}
+		
+	return 0;
+}
+@

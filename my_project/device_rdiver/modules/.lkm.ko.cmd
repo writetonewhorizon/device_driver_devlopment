@@ -1,0 +1,1 @@
+cmd_/home/device_rdiver/lkm.ko := ld -r -m elf_x86_64 -T /usr/src/kernels/linux-3.6.2/scripts/module-common.lds --build-id  -o /home/device_rdiver/lkm.ko /home/device_rdiver/lkm.o /home/device_rdiver/lkm.mod.o

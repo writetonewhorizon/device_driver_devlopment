@@ -1,0 +1,1 @@
+cmd_/home/par_port_driver/lkm.ko := ld -r -m elf_x86_64 -T /usr/src/kernels/linux-3.6.2/scripts/module-common.lds --build-id  -o /home/par_port_driver/lkm.ko /home/par_port_driver/lkm.o /home/par_port_driver/lkm.mod.o

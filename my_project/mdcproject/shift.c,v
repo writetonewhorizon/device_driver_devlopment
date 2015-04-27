@@ -1,0 +1,32 @@
+head	1.1;
+access;
+symbols;
+locks
+	dharmender:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	2014.02.21.11.02.11;	author dharmender;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include<stdio.h>
+int main()
+{
+int i = 5;
+i = i<<4;
+printf("%d\n",i);
+
+}
+@

@@ -1,0 +1,197 @@
+head	1.4;
+access;
+symbols;
+locks
+	root:1.4; strict;
+comment	@ * @;
+
+
+1.4
+date	2013.02.22.19.35.37;	author root;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2013.02.22.18.40.48;	author root;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2013.02.22.18.22.13;	author root;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2013.02.22.18.16.23;	author root;	state Exp;
+branches;
+next	;
+
+
+desc
+@master0.
+@
+
+
+1.4
+log
+@master4.
+@
+text
+@#include<stdio.h>
+//#include"header.h"
+#include<stdlib.h>
+#include<unistd.h>
+#include<fcntl.h>
+int main()
+{
+	char *marray;
+	char c,r[41];
+	int i,j,x,k = 0;
+	int count = 0;
+//	marray = (char *)malloc(sizeof(char));
+//	printf("%d\n",sizeof(*marray));
+/*	FILE *fp;
+	fp = open("singh.c","r");
+	c = getc(fp);
+	*marray = c;
+	c = getc(fp);
+	printf("%c %c\n",c,*marray);
+	fputc(marray,fp);*/
+	int fq;
+	fq = open("singh.c",O_RDONLY);
+	x = read(fq,&r,41);
+	printf("%s\n",r);
+	printf("Master array is\n");
+
+	for(i = 0;i < 50;i++)
+	{
+		count++;
+		c = r[i];
+		if(i == 0)
+		{
+			marray = malloc(sizeof(char));
+			*marray = c;
+//			printf("%c",*marray);
+			continue;
+		
+		}
+		else if(c != EOF)
+		{
+			for(j = 0;j < count-1;j++)
+			{
+				if(c != r[j] && j == count - 2)
+				{
+					k++;
+					marray = realloc(marray,(k + 1));
+					*(marray+(k)) = c;
+//					printf("%c",*(marray+(k)));
+				}
+				else if(c != r[j])
+					continue;
+				else
+					break;
+
+			}
+		}
+		else
+			break;
+	}
+	printf("\nsize of master array is :%d\n",k - 2);
+	char a[k - 2];
+	for(i = 0;i < k - 2;i++)
+		{
+		printf("%c",*(marray + i));
+		a[i] = *(marray + i);
+		}
+//	printf("%d\n",sizeof(*marray));
+
+
+	return 0;
+
+
+
+
+
+}
+@
+
+
+1.3
+log
+@master2.
+@
+text
+@d9 1
+a9 1
+	char c,r[44];
+d23 1
+a23 1
+	x = read(fq,&r,44);
+d35 1
+a35 1
+			printf("%c",*marray);
+d45 1
+d47 2
+a48 2
+					*(marray+k) = c;
+					printf("%c",*(marray+k++));
+a55 2
+			
+		
+d57 2
+a58 1
+	
+d60 7
+a66 1
+	printf("size of master array is :%d\n",k - 1);
+@
+
+
+1.2
+log
+@master1.
+@
+text
+@d45 1
+a45 2
+					k++;
+					marray = realloc(marray,sizeof(marray+k));
+d47 1
+a47 1
+					printf("%c",*(marray+k));
+d60 1
+a60 2
+	printf("%d\n",k);
+	printf("size of master array is :%d\n",sizeof(marray + k));
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@a25 19
+//	printf("%c\n",*marray);
+//	c = *marray;
+	
+	
+	/*while(c != EOF)
+	{
+		count++;
+		for(i = 0;i < count;i++)
+		{
+			if(c != *marray)
+			{
+				marray = realloc(marray,sizeof(marray + 1));
+				printf("%c %d\n",*marray,sizeof(marray));
+			
+			}
+
+		
+		}
+
+a26 2
+	}*/
+//	c = r[0];
+@
