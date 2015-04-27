@@ -12,11 +12,11 @@
 int main()
 {
     int fd, result, len;
-    char buf[10];
+    char buf[5];
     const char *str;
     if ((fd = open ("/dev/scull", O_WRONLY)) == -1)
     {
-        perror("open failed");
+        perror("open failed with fd ");
         return -1;
     }
     printf("fd = %d\n",fd);
@@ -25,10 +25,10 @@ int main()
     printf("len = %d\n",len);
     if ((result = write (fd, str, len)) != len)
     {
-        perror("write failed");
+        perror("write failed with fd ");
         return -1;
     }
-    printf("written bytes are = %d\n",result);
+    printf("written bytes are = %d %s \n",result, str);
     close(fd);
     if ((fd = open ("/dev/scull", O_RDONLY)) == -1)
     {
@@ -41,7 +41,7 @@ int main()
         perror("read failed");
         return -1;
     }
-    printf("read bytes are = %d\n",result);
+    printf("read bytes are = %d %s\n",result, buf);
     buf[result] = '\0';
     if (strncmp (buf, str, len)) 
     { 

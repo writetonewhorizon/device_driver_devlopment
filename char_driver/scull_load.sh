@@ -4,10 +4,10 @@ sudo modinfo ./modules/scull.ko
 lsmod
 dmesg
 sudo rm -f /dev/scull[0-3]
-sudo mknod /dev/scull0 c 250 0
-sudo mknod /dev/scull1 c 250 1
-sudo mknod /dev/scull2 c 250 2
-sudo mknod /dev/scull3 c 250 3
+sudo mknod /dev/scull0 c 251 0
+sudo mknod /dev/scull1 c 251 1
+sudo mknod /dev/scull2 c 251 2
+sudo mknod /dev/scull3 c 251 3
 sudo ln -sf scull0 /dev/scull
 sudo chgrp dharmender /dev/scull[0-3]
 sudo chmod 644 /dev/scull[0-3]

@@ -109,7 +109,13 @@ extern int scull_nr_devs;
 extern int scull_quantum;
 extern int scull_qset;
 
-
+ssize_t read_proc(struct file *filp, char __user *buf, size_t count,loff_t *f_pos );
+ssize_t write_proc(struct file *filp, const char __user *buf, size_t count,loff_t *f_pos);
+struct file_operations proc_fops = 
+{
+	.read	=read_proc,
+	.write	=write_proc
+};
 //int register_chrdev_region(dev_t first, unsigned int count, char *name);
 //int alloc_chrdev_region(dev_t *dev, unsigned int firstminor, unsigned int count, char *name);
 //void unregister_chrdev_region(dev_t first, unsigned int count);

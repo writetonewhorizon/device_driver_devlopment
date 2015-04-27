@@ -27,6 +27,68 @@ int scull_nr_devs = SCULL_NR_DEVS;	/* number of bare scull devices */
 int scull_quantum = SCULL_QUANTUM;
 int scull_qset =    SCULL_QSET;
 
+/* for proc */
+int len,temp;
+char *msg;
+/*end proc */
+
+//ssize_t read_proc(struct file *filp,char *buf,size_t count,loff_t *offp ) 
+ssize_t read_proc(struct file *filp, char __user *buf, size_t count,loff_t *f_pos )
+{
+	
+	printk(KERN_INFO "In proc read");
+	//len+= sprintf(buf+len, "Hello proc");
+	if(count>temp)
+	{
+		count=temp;
+	}
+	temp=temp-count;
+	copy_to_user(buf,msg, count);
+	if(count==0)
+		temp=len;
+	return len;
+}
+
+//ssize_t write_proc(struct file *filp,const char *buf,size_t count,loff_t *offp)
+ssize_t write_proc(struct file *filp, const char __user *buf, size_t count,loff_t *f_pos)
+{
+	printk(KERN_INFO "In proc write");
+	copy_from_user(msg,buf,count);
+	len=count;
+	temp=len;
+	return count;
+}
+
+static int scull_create_proc( void )
+{
+/*static inline struct proc_dir_entry *proc_create(const char *name, umode_t mode,struct proc_dir_entry *parent, 
+const struct file_operations *proc_fops)
+name: The name of the proc entry
+mode: The access mode for proc entry
+parent: The name of the parent directory under /proc
+proc_fops: The structure in which the file operations for the proc entry will be created. */
+	struct proc_dir_entry *proc;
+	proc = proc_create("scullmem", 0 /* default mode */,NULL /* parent dir */, &proc_fops /* proc operation*/);
+	if (!proc) 
+	{
+		printk(KERN_ERR "kaodv_queue: failed to create proc entry\n");
+		return -1;
+	}
+	else
+	{
+		printk(KERN_ERR "create proc entry successful \n");
+	}
+	msg=kmalloc(GFP_KERNEL,10*sizeof(char));
+	return 0;
+}
+
+static void scull_remove_proc( void )
+{
+    /* no problem if it was not registered */
+	remove_proc_entry("scullmem", NULL /* parent dir */);
+	printk(KERN_ERR "remove proc entry successful \n");
+}
+
 int scull_trim(struct scull_dev *dev)
 {
 	struct scull_qset *next, *dptr;
@@ -256,40 +318,6 @@ out:
 }
 
 /*
-* The cleanup function is used to handle initialization failures as well.
-* Thefore, it must be careful to work correctly even if some of the items
-* have not been initialized
-*/
-
-void scull_cleanup_module(void)
-{
-	
-	dev_t devno = MKDEV(scull_major, scull_minor);	
-	int i;
-
-	printk(KERN_NOTICE "BEGIN >>>>>>%s",__func__ );
-	/* Get rid of our char dev entries */
-	if (scull_devices) 
-	{
-		for (i = 0; i < scull_nr_devs; i++) 
-		{
-			scull_trim(scull_devices + i);
-			cdev_del(&scull_devices[i].cdev);
-		}
-		kfree(scull_devices);
-	}
-
-	/* cleanup_module is never called if registering failed */
-	unregister_chrdev_region(devno, scull_nr_devs);
-	/* and call the cleanup functions for friend devices */
-//	scull_p_cleanup();
-//	scull_access_cleanup();
-	
-	printk(KERN_NOTICE "END >>>>>>%s",__func__ );
-
-}
-
-/*
 Set up the char_dev structure for this device. 
 struct cdev to represent char devices internally.
 */
@@ -374,10 +402,46 @@ int scull_init_module(void)
 		scull_devices[i].qset = scull_qset;
 		scull_setup_cdev(&scull_devices[i], i);
 	}
+	scull_create_proc();
 	
 fail:
 	printk(KERN_NOTICE "END >>>>>>%s",__func__ );
 	return result;
 }
+/*
+* The cleanup function is used to handle initialization failures as well.
+* Thefore, it must be careful to work correctly even if some of the items
+* have not been initialized
+*/
+
+void scull_cleanup_module(void)
+{
+	
+	dev_t devno = MKDEV(scull_major, scull_minor);	
+	int i;
+
+	printk(KERN_NOTICE "BEGIN >>>>>>%s",__func__ );
+	scull_remove_proc();
+	/* Get rid of our char dev entries */
+	if (scull_devices) 
+	{
+		for (i = 0; i < scull_nr_devs; i++) 
+		{
+			scull_trim(scull_devices + i);
+			cdev_del(&scull_devices[i].cdev);
+		}
+		kfree(scull_devices);
+	}
+
+	/* cleanup_module is never called if registering failed */
+	unregister_chrdev_region(devno, scull_nr_devs);
+	/* and call the cleanup functions for friend devices */
+//	scull_p_cleanup();
+//	scull_access_cleanup();
+	
+	printk(KERN_NOTICE "END >>>>>>%s",__func__ );
+
+}
+
 module_init(scull_init_module);
 module_exit(scull_cleanup_module);
