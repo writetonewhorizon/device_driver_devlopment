@@ -1,7 +1,7 @@
 INSTALL_DIR=modules
 ifneq (${KERNELRELEASE},)
-	obj-m := character_driver.o
-module-objs := character_driver.o 
+	obj-m := scull.o
+module-objs := scull.o 
 
 else
 	KERNELDIR ?= /lib/modules/$(shell uname -r)/build
