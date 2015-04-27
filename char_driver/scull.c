@@ -68,7 +68,7 @@ mode: The access mode for proc entry
 parent: The name of the parent directory under /proc
 proc_fops: The structure in which the file operations for the proc entry will be created. */
 	struct proc_dir_entry *proc;
-	proc = proc_create("scullmem", 0 /* default mode */,NULL /* parent dir */, &proc_fops /* proc operation*/);
+	proc = proc_create("scullmem", 0666 /* default mode */,NULL /* parent dir */, &proc_fops /* proc operation*/);
 	if (!proc) 
 	{
 		printk(KERN_ERR "kaodv_queue: failed to create proc entry\n");
