@@ -15,9 +15,11 @@ dmesg
 #sudo mknod /dev/char2 c 249 0
 ls -al /dev/mynull
 ls -al /sys/class/chardev/
+sudo udevadm info -a -p /sys/class/chardev/mynull
 sudo chmod a+w /dev/mynull
-sudo echo hi > /dev/mynull
-sudo cat /dev/mynull 
+#sudo echo hi > /dev/mynull
+#sudo cat /dev/mynull 
+sudo strace ./test
 sudo rmmod char
 dmesg
 

@@ -29,6 +29,10 @@ static char   message[256] = {0};           ///< Memory for the string that is p
 static short  size_of_message;              ///< Used to remember the size of the string stored
 static int    numberOpens = 0;              ///< Counts the number of times the device is opened
 
+static DEFINE_MUTEX(char_mutex);  /// A macro that is used to declare a new mutex that is visible in this file
+                                     /// results in a semaphore variable ebbchar_mutex with value 1 (unlocked)
+                                     /// DEFINE_MUTEX_LOCKED() results in a variable with value 0 (locked)
+
 /** @brief The device open function that is called each time the device is opened
  *  This will only increment the numberOpens counter in this case.
  *  @param inodep A pointer to an inode object (defined in linux/fs.h)
@@ -36,6 +40,11 @@ static int    numberOpens = 0;              ///< Counts the number of times the 
  */
 static int dev_open(struct inode *i, struct file *f)
 {
+	if(!mutex_trylock(&char_mutex)){    /// Try to acquire the mutex (i.e., put the lock on/down)
+                                          /// returns 1 if successful and 0 if there is contention
+		printk(KERN_ALERT "Char: Device in use by another process");
+		return -EBUSY;
+	}
 	numberOpens++;
 	printk(KERN_INFO "Char: Device has been opened %d time(s)\n", numberOpens);
 	return 0;
@@ -47,6 +56,7 @@ static int dev_open(struct inode *i, struct file *f)
  */
 static int dev_release(struct inode *i, struct file *f)
 {
+	mutex_unlock(&char_mutex);          /// Releases the mutex (i.e., the lock goes up)
 	printk(KERN_INFO "Driver: close()\n");
 	return 0;
 }
@@ -154,6 +164,7 @@ static void __exit char_exit(void) /* Destructor */
 	unregister_chrdev_region(first, 3);
 	class_destroy(dcl);
 	device_destroy(dcl,first);
+	mutex_destroy(&char_mutex);        /// destroy the dynamically-allocated mutex
 	printk(KERN_INFO "Alvida: module unregistered\n");
 }
 

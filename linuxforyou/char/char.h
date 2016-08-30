@@ -21,3 +21,9 @@ static struct file_operations fops =
    .write = dev_write,
    .release = dev_release,
 };
+
+/*dev_open(): Called each time the device is opened from user space.
+dev_read(): Called when data is sent from the device to user space.
+dev_write(): Called when data is sent from user space to the device.
+dev_release(): Called when the device is closed in user space.
+*/
