@@ -119,7 +119,7 @@ static int __init char_init(void) /* Constructor */
 	printk(KERN_INFO "Namaskar: module registered\n");
 	
 //	register_chrdev_region(dev_t, unsigned, const char *);
-	if (alloc_chrdev_region(&first, 0, 3, "Dharm") < 0) {
+	if (alloc_chrdev_region(&first, 0, 1, "Dharm") < 0) {
 		return -1;
 	}
 	printk(KERN_INFO "<Major, Minor>: <%d, %d>\n", MAJOR(first), MINOR(first));
@@ -129,7 +129,7 @@ static int __init char_init(void) /* Constructor */
 	//if ( (dcl = class_create(THIS_MODULE, "chardev")) == NULL ) {
 	if(IS_ERR(dcl)) {	// Clean up if there is an error
 		printk(KERN_INFO " class chardev is not created successfully\n");
-		unregister_chrdev_region(first, 3);	// Repeated code but the alternative is goto statements
+		unregister_chrdev_region(first, 1);	// Repeated code but the alternative is goto statements
 		return PTR_ERR(dcl);
 	}
 	printk(KERN_INFO "Char: device class created successfully\n"); 
@@ -141,19 +141,19 @@ static int __init char_init(void) /* Constructor */
 	if(IS_ERR(ddr)) {
 		printk(KERN_INFO " device  is not created successfully\n");
 		class_destroy(dcl);
-		unregister_chrdev_region(first, 3);
+		unregister_chrdev_region(first, 1);
 		//The PTR_ERR() is a function that is defined in linux/err.h that retrieves the error number from the pointer
 		return PTR_ERR(ddr);
 	}
 	printk(KERN_INFO "Char: device created successfully\n"); 
 
 	cdev_init(&c_dev, &char_fops);
-	if (cdev_add(&c_dev, first, 3) == -1)
+	if (cdev_add(&c_dev, first, 1) == -1)
 	{
 		printk(KERN_INFO " device  is not added successfully\n");
 		class_destroy(dcl);
 		device_destroy(dcl,first);
-		unregister_chrdev_region(first, 3);
+		unregister_chrdev_region(first, 1);
 		return -1;	
 	}
 	return 0;
@@ -161,10 +161,12 @@ static int __init char_init(void) /* Constructor */
  
 static void __exit char_exit(void) /* Destructor */
 {
-	unregister_chrdev_region(first, 3);
-	class_destroy(dcl);
-	device_destroy(dcl,first);
-	mutex_destroy(&char_mutex);        /// destroy the dynamically-allocated mutex
+	cdev_del(&c_dev);
+	device_destroy(dcl, first);     		// remove the device
+//	class_unregister(dcl);                          // unregister the device class
+	class_destroy(dcl);                             // remove the device class
+	unregister_chrdev_region(first, 1);
+	mutex_destroy(&char_mutex);        		/// destroy the dynamically-allocated mutex
 	printk(KERN_INFO "Alvida: module unregistered\n");
 }
 
